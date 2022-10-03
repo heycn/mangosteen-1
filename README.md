@@ -27,3 +27,13 @@ EDITOR="code --wait" bin/rails credentials:edit # 复制key
 EDITOR="code --wait" bin/rails credentials:edit --env production # 粘贴key
 EDITOR="code --wait" bin/rails credentials:edit # 直接关闭
 ```
+
+## 生产环境
+
+### 创建数据表
+
+> 如果 curl 没有返回，说明数据库没有启动,需要运行以下命令
+
+```zsh
+docker exec -it mangosteen-prod-1 bin/rails db:create db:migrate
+```
