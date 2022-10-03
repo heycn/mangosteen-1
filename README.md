@@ -17,3 +17,13 @@ docker run -d      --name db-for-mangosteen      -e POSTGRES_USER=mangosteen    
 ```zsh
 bin/rails s
 ```
+
+## 部署
+
+### 密钥管理
+
+```zsh
+EDITOR="code --wait" bin/rails credentials:edit # 复制key
+EDITOR="code --wait" bin/rails credentials:edit --env production # 粘贴key
+EDITOR="code --wait" bin/rails credentials:edit # 直接关闭
+```
