@@ -1,5 +1,5 @@
-# 注意修改 oh-my-docker-m1 目录名为你的目录名
-dir=oh-my-docker-m1
+# 注意修改 oh-my-env 目录名为你的目录名
+dir=oh-my-env
 
 time=$(date +'%Y%m%d-%H%M%S')
 dist=tmp/mangosteen-$time.tar.gz
