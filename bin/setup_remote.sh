@@ -5,12 +5,14 @@ db_container_name=db-for-mangosteen
 
 function set_env {
   name=$1
+  hint=$2
+  [[ ! -z "${!name}" ]] && return
   while [ -z "${!name}" ]; do
-    echo "> 请输入 $name:"
+    [[ ! -z "$hint" ]] && echo "> 请输入 $name: $hint" || echo "> 请输入 $name:"
     read $name
-    sed -i "1s/^/export $name=${!name}\n/" ~/.bashrc
-    echo "${name} 已保存至 ~/.bashrc"
   done
+  sed -i "1s/^/export $name=${!name}\n/" ~/.bashrc
+  echo "${name} 已保存至 ~/.bashrc"
 }
 function title {
   echo 
