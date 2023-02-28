@@ -27,6 +27,14 @@ set_env DB_HOST
 set_env DB_PASSWORD
 set_env RAILS_MASTER_KEY
 
+title '创建docker网络'
+if [ "$(docker network ls -q -f name=^network1$)" ]; then
+  echo '已存在network1'
+else
+  docker network create network1
+  echo '创建network1'
+fi
+
 title '创建数据库'
 if [ "$(docker ps -aq -f name=^${DB_HOST}$)" ]; then
   echo '已存在数据库'

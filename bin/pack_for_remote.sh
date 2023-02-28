@@ -25,7 +25,7 @@ mkdir $cache_dir
 bundle cache
 tar --exclude="tmp/cache/*" --exclude="tmp/deploy_cache/*" -czv -f $dist *
 title '创建远程目录'
-ssh $user@$ip "mkdir -p $deploy_dir/vendor"
+ssh $user@$ip "mkdir -p $deploy_dir/vendor/cache"
 title '上传压缩文件'
 scp $dist $user@$ip:$deploy_dir/
 yes | rm $dist
