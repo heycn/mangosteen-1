@@ -34,7 +34,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: mangosteen_test
+  database: mangosteen_dev
   username: mangosteen
   password: 123456
   host: db-for-mangosteen
