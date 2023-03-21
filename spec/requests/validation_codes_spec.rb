@@ -5,7 +5,7 @@ RSpec.describe "ValidationCodes", type: :request do
     it "发送太频繁就会返回 429" do
       post '/api/v1/validation_codes', params: {email: 'heycn@foxmail.com'}
       expect(response).to have_http_status(200)
-      post '/api/v1/validation_codes', params: {email: 'fangyinghang@foxmail.com'}
+      post '/api/v1/validation_codes', params: {email: 'heycn@foxmail.com'}
       expect(response).to have_http_status(429)
     end
   end
