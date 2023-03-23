@@ -5,8 +5,8 @@ RSpec.describe "Me", type: :request do
   include ActiveSupport::Testing::TimeHelpers
   describe "获取当前用户" do
     it "登录后成功获取" do
-      user = User.create email: 'fangyinghang@foxmail.com'
-      post '/api/v1/session', params: {email: 'fangyinghang@foxmail.com', code: '123456'}
+      user = User.create email: 'heycn@foxmail.com'
+      post '/api/v1/session', params: {email: 'heycn@foxmail.com', code: '123456'}
       expect(response).to have_http_status(200)
       json = JSON.parse response.body
       jwt = json['jwt']
