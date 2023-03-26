@@ -180,18 +180,18 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Version: HTTP/1.0
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0MzUsImV4cCI6MTY3OTgyMzY3M30.QynwQ0W_J0Kt0tAR8oXFNf6S2dGwy5brjyTNjVGYXR0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNTMsImV4cCI6MTY3OTgyOTM3M30.u-MWVed70Ng_hiM5o3Z6YpFqMhk_YWA-7mC3OqXZpjQ
 Accept: application/json
 Content-Type: application/json
 Host: example.org
 Cookie: </pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET /api/v1/items?created_after=2020-10-10&amp;created_before=2020-11-11</pre>
+          <pre class="request route highlight">GET /api/v1/items?created_after=2023-03-16+17%3A16%3A13+%2B0800&amp;created_before=2023-04-05+17%3A16%3A13+%2B0800</pre>
 
             <h4>Query Parameters</h4>
-            <pre class="request query_parameters highlight">created_after: 2020-10-10
-created_before: 2020-11-11</pre>
+            <pre class="request query_parameters highlight">created_after: 2023-03-16 17:16:13 +0800
+created_before: 2023-04-05 17:16:13 +0800</pre>
 
 
 
@@ -205,115 +205,145 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Vary: Accept
-ETag: W/&quot;13b3cda096e0721b8c027a068718b3ae&quot;
+ETag: W/&quot;56f69351b78558da5001b6496426912d&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a8d6b567-a07a-4d86-8ea3-4cff528f5c26
-X-Runtime: 0.018115
-Content-Length: 1689</pre>
+X-Request-Id: 210d4f1f-fe73-4774-8cde-ad4ab8bd17aa
+X-Runtime: 0.016134
+Content-Length: 2089</pre>
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>
               <h4>Body</h4>
               <pre class="response body">{
   &quot;resources&quot;: [
     {
-      &quot;id&quot;: 1782,
-      &quot;user_id&quot;: 435,
+      &quot;id&quot;: 144,
+      &quot;user_id&quot;: 153,
       &quot;amount&quot;: 100,
       &quot;note&quot;: null,
-      &quot;tags_id&quot;: null,
-      &quot;happen_at&quot;: null,
-      &quot;created_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-03-26T07:41:13.173Z&quot;
+      &quot;tags_id&quot;: [
+        198
+      ],
+      &quot;happen_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-03-26T09:16:13.466Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-03-26T09:16:13.466Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;
     },
     {
-      &quot;id&quot;: 1783,
-      &quot;user_id&quot;: 435,
+      &quot;id&quot;: 145,
+      &quot;user_id&quot;: 153,
       &quot;amount&quot;: 100,
       &quot;note&quot;: null,
-      &quot;tags_id&quot;: null,
-      &quot;happen_at&quot;: null,
-      &quot;created_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-03-26T07:41:13.175Z&quot;
+      &quot;tags_id&quot;: [
+        198
+      ],
+      &quot;happen_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-03-26T09:16:13.468Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-03-26T09:16:13.468Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;
     },
     {
-      &quot;id&quot;: 1784,
-      &quot;user_id&quot;: 435,
+      &quot;id&quot;: 146,
+      &quot;user_id&quot;: 153,
       &quot;amount&quot;: 100,
       &quot;note&quot;: null,
-      &quot;tags_id&quot;: null,
-      &quot;happen_at&quot;: null,
-      &quot;created_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-03-26T07:41:13.176Z&quot;
+      &quot;tags_id&quot;: [
+        198
+      ],
+      &quot;happen_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-03-26T09:16:13.470Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-03-26T09:16:13.470Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;
     },
     {
-      &quot;id&quot;: 1785,
-      &quot;user_id&quot;: 435,
+      &quot;id&quot;: 147,
+      &quot;user_id&quot;: 153,
       &quot;amount&quot;: 100,
       &quot;note&quot;: null,
-      &quot;tags_id&quot;: null,
-      &quot;happen_at&quot;: null,
-      &quot;created_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-03-26T07:41:13.177Z&quot;
+      &quot;tags_id&quot;: [
+        198
+      ],
+      &quot;happen_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-03-26T09:16:13.471Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-03-26T09:16:13.471Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;
     },
     {
-      &quot;id&quot;: 1786,
-      &quot;user_id&quot;: 435,
+      &quot;id&quot;: 148,
+      &quot;user_id&quot;: 153,
       &quot;amount&quot;: 100,
       &quot;note&quot;: null,
-      &quot;tags_id&quot;: null,
-      &quot;happen_at&quot;: null,
-      &quot;created_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-03-26T07:41:13.178Z&quot;
+      &quot;tags_id&quot;: [
+        198
+      ],
+      &quot;happen_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-03-26T09:16:13.472Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-03-26T09:16:13.472Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;
     },
     {
-      &quot;id&quot;: 1787,
-      &quot;user_id&quot;: 435,
+      &quot;id&quot;: 149,
+      &quot;user_id&quot;: 153,
       &quot;amount&quot;: 100,
       &quot;note&quot;: null,
-      &quot;tags_id&quot;: null,
-      &quot;happen_at&quot;: null,
-      &quot;created_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-03-26T07:41:13.179Z&quot;
+      &quot;tags_id&quot;: [
+        198
+      ],
+      &quot;happen_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-03-26T09:16:13.473Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-03-26T09:16:13.473Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;
     },
     {
-      &quot;id&quot;: 1788,
-      &quot;user_id&quot;: 435,
+      &quot;id&quot;: 150,
+      &quot;user_id&quot;: 153,
       &quot;amount&quot;: 100,
       &quot;note&quot;: null,
-      &quot;tags_id&quot;: null,
-      &quot;happen_at&quot;: null,
-      &quot;created_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-03-26T07:41:13.180Z&quot;
+      &quot;tags_id&quot;: [
+        198
+      ],
+      &quot;happen_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-03-26T09:16:13.474Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-03-26T09:16:13.474Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;
     },
     {
-      &quot;id&quot;: 1789,
-      &quot;user_id&quot;: 435,
+      &quot;id&quot;: 151,
+      &quot;user_id&quot;: 153,
       &quot;amount&quot;: 100,
       &quot;note&quot;: null,
-      &quot;tags_id&quot;: null,
-      &quot;happen_at&quot;: null,
-      &quot;created_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-03-26T07:41:13.181Z&quot;
+      &quot;tags_id&quot;: [
+        198
+      ],
+      &quot;happen_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-03-26T09:16:13.476Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-03-26T09:16:13.476Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;
     },
     {
-      &quot;id&quot;: 1790,
-      &quot;user_id&quot;: 435,
+      &quot;id&quot;: 152,
+      &quot;user_id&quot;: 153,
       &quot;amount&quot;: 100,
       &quot;note&quot;: null,
-      &quot;tags_id&quot;: null,
-      &quot;happen_at&quot;: null,
-      &quot;created_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-03-26T07:41:13.182Z&quot;
+      &quot;tags_id&quot;: [
+        198
+      ],
+      &quot;happen_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-03-26T09:16:13.477Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-03-26T09:16:13.477Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;
     },
     {
-      &quot;id&quot;: 1791,
-      &quot;user_id&quot;: 435,
+      &quot;id&quot;: 153,
+      &quot;user_id&quot;: 153,
       &quot;amount&quot;: 100,
       &quot;note&quot;: null,
-      &quot;tags_id&quot;: null,
-      &quot;happen_at&quot;: null,
-      &quot;created_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-03-26T07:41:13.183Z&quot;
+      &quot;tags_id&quot;: [
+        198
+      ],
+      &quot;happen_at&quot;: &quot;2020-10-30T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-03-26T09:16:13.478Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-03-26T09:16:13.478Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;
     }
   ],
   &quot;pager&quot;: {
