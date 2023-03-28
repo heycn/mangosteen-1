@@ -18,7 +18,7 @@ chmod +x bin/pack_for_remote.sh bin/setup_remote.sh
 
 ## 常见问题
 
-### 1. 部署远程服务器时，数据库连接失败
+### 1. 检查数据库是否启动
 
 1. 检查数据库是否启动
 2. docker ps -a 查看数据库容器是在运行
@@ -57,3 +57,16 @@ EDITOR="code --wait" bin/rails credentials:edit --environment production
 这样一来，就能得到两个全新的、匹配的 `config/credentials/production.yml.enc` 与 `config/credentials/production.key` 文件。
 
 然后你需要手动将 `config/credentials/production.key` 的内容更新到远程服务器的 `bashrc` 中。
+
+### 4. 如何查看容器日志
+
+进入 docker
+
+```bash
+docker ps
+docker logs xxx
+docker exec -it xxx bash
+tail -f log/production.log
+```
+
+然后在前端调用接口就能看到日志
