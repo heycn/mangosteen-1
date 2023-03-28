@@ -14,7 +14,6 @@ require "action_view/railtie"
 require "action_cable/engine"
 # require "rails/test_unit/railtie"
 require_relative '../lib/auto_jwt'
-config.i18n.default_locale = 'zh-CN'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -38,5 +37,6 @@ module Mangosteen1
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
     config.middleware.use AutoJwt
+    config.i18n.default_locale = 'zh-CN'
   end
 end
