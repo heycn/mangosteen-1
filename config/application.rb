@@ -14,6 +14,7 @@ require "action_view/railtie"
 require "action_cable/engine"
 # require "rails/test_unit/railtie"
 require_relative '../lib/auto_jwt'
+config.i18n.default_locale = 'zh-CN'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
