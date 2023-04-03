@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_03_132140) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_03_142459) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -18,7 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_03_132140) do
     t.bigint "user_id"
     t.integer "amount"
     t.text "note"
-    t.bigint "tags_id", array: true
+    t.bigint "tag_ids", array: true
     t.datetime "happen_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
