@@ -188,7 +188,7 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Version: HTTP/1.0
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2ODA1NDQ4OTN9.gHVmALFRdLk-xAlVbgk6hJRTgiyjgSWEXjluFWe82Jo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNSwiZXhwIjoxNjgwNTQ0OTg1fQ.8fd1zR7Z3bfhEn9WrS_40UdHFdkssj1E7NTIr5vqmPY
 Accept: application/json
 Content-Type: application/json
 Host: example.org
@@ -215,26 +215,56 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Vary: Accept
-ETag: W/&quot;0552c15286dcb94a5afb500f9d305be9&quot;
+ETag: W/&quot;f2d78871ee07ce3a207aab3c7a6824db&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 94590a1f-77bb-4798-a083-a96d5bbc0693
-X-Runtime: 0.002479
-Content-Length: 102</pre>
+X-Request-Id: fdc8c4f3-8e62-48e4-829d-4cbdf445c87b
+X-Runtime: 0.004526
+Content-Length: 624</pre>
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>
               <h4>Body</h4>
               <pre class="response body">{
   &quot;groups&quot;: [
     {
-      &quot;tag_id&quot;: 7,
+      &quot;tag_id&quot;: 44,
+      &quot;tag&quot;: {
+        &quot;id&quot;: 44,
+        &quot;user_id&quot;: 15,
+        &quot;name&quot;: &quot;Qui.&quot;,
+        &quot;sign&quot;: &quot;😡&quot;,
+        &quot;deleted_at&quot;: null,
+        &quot;created_at&quot;: &quot;2023-04-03T16:03:05.669Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-04-03T16:03:05.669Z&quot;,
+        &quot;kind&quot;: &quot;expenses&quot;
+      },
       &quot;amount&quot;: 500
     },
     {
-      &quot;tag_id&quot;: 5,
+      &quot;tag_id&quot;: 42,
+      &quot;tag&quot;: {
+        &quot;id&quot;: 42,
+        &quot;user_id&quot;: 15,
+        &quot;name&quot;: &quot;Vol.&quot;,
+        &quot;sign&quot;: &quot;😡&quot;,
+        &quot;deleted_at&quot;: null,
+        &quot;created_at&quot;: &quot;2023-04-03T16:03:05.666Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-04-03T16:03:05.666Z&quot;,
+        &quot;kind&quot;: &quot;expenses&quot;
+      },
       &quot;amount&quot;: 400
     },
     {
-      &quot;tag_id&quot;: 6,
+      &quot;tag_id&quot;: 43,
+      &quot;tag&quot;: {
+        &quot;id&quot;: 43,
+        &quot;user_id&quot;: 15,
+        &quot;name&quot;: &quot;Qui.&quot;,
+        &quot;sign&quot;: &quot;😡&quot;,
+        &quot;deleted_at&quot;: null,
+        &quot;created_at&quot;: &quot;2023-04-03T16:03:05.668Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-04-03T16:03:05.668Z&quot;,
+        &quot;kind&quot;: &quot;expenses&quot;
+      },
       &quot;amount&quot;: 300
     }
   ],
