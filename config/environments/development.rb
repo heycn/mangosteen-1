@@ -42,14 +42,13 @@ Rails.application.configure do
     address:              'smtp.qq.com',
     port:                 587,
     domain:               'smtp.qq.com',
-    user_name:            'heycn@foxmail.com',
+    user_name:            'fangyinghang@foxmail.com',
     password:             Rails.application.credentials.email_password,
     authentication:       'plain',
     enable_starttls_auto: true,
     open_timeout:         10,
     read_timeout:         10
   }
-
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

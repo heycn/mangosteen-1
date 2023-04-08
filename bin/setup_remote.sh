@@ -83,11 +83,11 @@ docker run -d -p 80:80 -p 443:443 -p 8080:8080\
            -e PUID=1000 \
            -e PGID=1000 \
            -e TZ=Etc/GMT-8 \
-          #  -e URL=mangosteen2.hunger-valley.com \
+           -e URL=mangosteen2.hunger-valley.com \
            -e VALIDATION=http \
            --name=$nginx_container_name \
            -v /home/$user/nginx-config:/config \
-           -v /home/$user/deploys/$version/nginx.default.conf:/config/nginx/site-confs/default \
+           -v /home/$user/deploys/$version/nginx.default.conf:/config/nginx/site-confs/default.conf \
            -v /home/$user/deploys/$version/dist:/usr/share/nginx/html \
            -v /home/$user/deploys/$version/api:/usr/share/nginx/html/apidoc \
            linuxserver/swag:latest
